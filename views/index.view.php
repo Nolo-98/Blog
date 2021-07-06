@@ -24,15 +24,13 @@
                      <input type="text" name="busqueda" placeholder="Buscar">
                      <button type="submit" class="icono fa fa-search"></button>
                     </form>
-                
-
 
                     <nav class="menu">
                         <ul>
                             <!-- Icono de redes sociales -->
-                            <li><a href="="><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://twitter.com/home"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="="><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="=">Contacto<i class="icono fa fa-envelope"></i></a></li>
+                            <li><a href="=">Contacto <i class="icono fa fa-envelope"></i></a></li>
                         </ul>
                     </nav>
                  </div>

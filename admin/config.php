@@ -1,6 +1,6 @@
 <?php
 
-define('RUTA' , 'file:///C:/Users/david/OneDrive/Escritorio/3er%20Cuatrimestre/Aplicaciones%20Web/Blog/')
+define('RUTA', 'http://localhost/blog/');
 
 $bd_config = array(
      'basedatos' => 'blog_practica',
