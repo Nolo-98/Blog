@@ -30,9 +30,10 @@
                     <nav class="menu">
                         <ul> <!-- Icono de redes sociales, se agrego icono con link de GOOGLE, CHECAR -->
                             <li><a href="https://twitter.com/home"><i class="fa fa-twitter"></i></a></li>
-                            <span class="material-icons">facebook</span>
+                            <!-- icono que si sirve -->
+                            <li><a href="https://www.facebook.com/Universidad-Tecnológica-De-Tlaxcala-155983347830609"><span class="material-icons">facebook</span></i></a></li>
                             <li><a href="="><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="=">Contacto <i class="icono fa fa-envelope"></i></a></li>
+                            <li><a href="">Contacto <i class="icono fa fa-envelope"></i></a></li>   
                             <span class="material-icons">contact_support</span>
                         </ul>
                     </nav>
