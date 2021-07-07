@@ -1,10 +1,9 @@
 <?php
 
 function conexion($bd_config){
-
     try {
         //code...
-        $conexion new PDO('mysql:host=localhost;dbname=blog_practica', 'root', '');
+        $conexion = new PDO('mysql:host=localhost;dbname=blog_practica', 'root', '');
         return $conexion;
     } catch (\PDOException $e) {
         return false;
