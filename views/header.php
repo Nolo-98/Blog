@@ -8,14 +8,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<!-- iconos que bo sirven -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesone/4.5.0/css/font-awesone.min.css">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="<?php echo RUTA; ?>css/estilos.css">
      </head>
      <body>
          <header>
              <div class="contenedor">
                  <div class="logo izquierda"> 
-                     <p><a href="=">Mi primer blog</a><p/>
+                     <p><a href="<?php echo RUTA; ?>">Mi primer blog</a><p/>
                  </div>
 
                  <div class="derecha">
@@ -25,10 +28,12 @@
                     </form>
 
                     <nav class="menu">
-                        <ul> <!-- Icono de redes sociales -->
+                        <ul> <!-- Icono de redes sociales, se agrego icono con link de GOOGLE, CHECAR -->
                             <li><a href="https://twitter.com/home"><i class="fa fa-twitter"></i></a></li>
+                            <span class="material-icons">facebook</span>
                             <li><a href="="><i class="fa fa-facebook"></i></a></li>
                             <li><a href="=">Contacto <i class="icono fa fa-envelope"></i></a></li>
+                            <span class="material-icons">contact_support</span>
                         </ul>
                     </nav>
                  </div>
