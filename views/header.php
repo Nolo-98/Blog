@@ -7,7 +7,9 @@
         <!-- Estilo de Letra -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
 <!-- iconos que bo sirven -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesone/4.5.0/css/font-awesone.min.css">
 <!-- 2do link que si sirve-->
