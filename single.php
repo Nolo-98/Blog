@@ -1,69 +1,26 @@
 <?php
-
 require 'admin/config.php';
+require 'functions.php';
+
+$conexion = conexion($bd_config);
+$id_articulo = id_articulo($_GET['id']);
+
+if (!$conexion) {
+    header('Location: error.php');
+}
+$posts = obtener_post($blog_config['post_por_pagina'], $conexion);
+
+if (empty($id_articulo)) {
+    header('Location: index.php');
+}
+
+$post= obtener_post_por_id($conexion, $id_articulo);
+
+if (!$post) {
+    header('Location: index.php');
+}
+
+$post = $post[0];
 
 require 'views/single.view.php';
-
 ?>
-<?php require 'header.php'; ?>
-
-<div class="Contenedor">
-    <div class="post">
-          <article>
-            <h2 class="titulo"> <a href="=">Titulo del articulo</h2>
-            <p class="fecha"> 5 de Julio del 2021 </p>
-            <div class="thumb">
-                   <a href ="=">
-         <img src="<?php echo RUTA;  ?>/imagenes/1.png" alt="">
-         <a/>
-         </div>
-         <p class="extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quo!</p>
-         <a href="=" class="continuar">Seguir Leyendo</a>  
-   </article>
-</div>
-
-<div class="post">
-          <article>
-            <h2 class="titulo"><a href="=">Titulo del articulo</h2>
-            <p class="fecha"> 5 de Julio del 2021 </p>
-            <div class="thumb">
-                   <a href ="=">
-         <img src="<?php echo RUTA;  ?>/imagenes/2.png" alt="">
-         <a/>
-         </div>
-         <p class="extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quo!</p>
-         <a href="=" class="continuar">Seguir Leyendo</a>  
-   </article>
-</div>
-
-<div class="post">
-          <article>
-            <h2 class="titulo"><a href="=">Titulo del articulo</h2>
-            <p class="fecha"> 5 de Julio del 2021 </p>
-            <div class="thumb">
-                   <a href ="=">
-         <img src="<?php echo RUTA;  ?>/imagenes/3.png" alt="">
-         <a/>
-         </div>
-         <p class="extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quo!</p>
-         <a href="=" class="continuar">Seguir Leyendo</a>  
-   </article>
-</div>
-
-<div class="post">
-          <article>
-            <h2 class="titulo"><a href="=">Titulo del articulo</h2>
-            <p class="fecha"> 5 de Julio del 2021 </p>
-            <div class="thumb">
-                   <a href ="=">
-         <img src="<?php echo RUTA;  ?>/imagenes/4.png" alt="">
-         <a/>
-         </div>
-         <p class="extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quo!</p>
-         <a href="=" class="continuar">Seguir Leyendo</a>  
-   </article>
-</div>
-<?php require 'paginacion.php'; ?>
-</div>
-
-<?php require 'footer.php'; ?>
